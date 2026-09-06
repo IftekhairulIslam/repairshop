@@ -14,8 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Repair Shop",
+  title: {
+    template: "%s | Computer Repair Shop",
+    default: "Computer Repair Shop",
+  },
   description: "Professional repair services",
+  applicationName: "Repair Shop",
+  authors: [{ name: "Iftekhairul Islam", url: "https://iftekhairul.net" }],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
